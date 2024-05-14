@@ -22,15 +22,51 @@ logger = logging.getLogger(__name__)
 DEFAULT_DEVICE_URL = "https://wdm-a.wbx2.com/wdm/api/v1"
 
 DEVICE_DATA = {
-    "deviceName": "pywebsocket-client",
-    "deviceType": "DESKTOP",
-    "localizedModel": "python",
-    "model": "python",
-    "name": "python-spark-client",
-    "systemName": "python-spark-client",
-    "systemVersion": "0.1"
+"deviceName": "pywebsocket-client",
+"deviceType": "DESKTOP",
+"localizedModel": "python",
+"model": "python",
+"name": "python-spark-client",
+"systemName": "python-spark-client",
+"systemVersion": "0.1",
+"features": {
+"user": [
+{
+"key": "direct-message-notifications",
+"val": "true",
+"mutable": True,
+"lastModified": "2019-07-03T09:18:54.806Z",
+"type": "USER",
+"deletedTime": 0
+},
+{
+"key": "group-message-notifications",
+"val": "true",
+"mutable": True,
+"lastModified": "2019-07-03T09:26:51.902Z",
+"type": "USER",
+"deletedTime": 0
+},
+{
+"key": "mention-notifications",
+"val": "true",
+"mutable": True,
+"lastModified": "2019-07-03T09:25:21.164Z",
+"type": "USER",
+"deletedTime": 0
+},
+{
+"key": "web-color-theme",
+"val": "true",
+"mutable": True,
+"lastModified": "2021-06-08T13:48:46.908Z",
+"type": "USER",
+"deletedTime": 0
 }
+]
 
+}
+}
 ssl_context = ssl.create_default_context()
 ssl_context.load_verify_locations(certifi.where())
 
